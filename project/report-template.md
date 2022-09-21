@@ -1,45 +1,45 @@
 # Report: Predict Bike Sharing Demand with AutoGluon Solution
-#### NAME HERE
+#### Rafiul Hasan Chowdhury
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: Add your explanation
+Changing in time limits, evaluation metrics, presets come with different results. If any of my predictor have negative value, I've to change them into zero as Kaggle don't accept negative values as submission.
 
 ### What was the top ranked model that performed?
-TODO: Add your explanation
+WeightedEnsemble_L3
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO: Add your explanation
+Exploratory data analysis helps visulize and analyse data for better understanding.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: Add your explanation
+Moderately and that was for changed in hyperparameters.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-TODO: Add your explanation
+0.20
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: Add your explanation
+In the time limit parameter.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+|initial|600|"best_quality"|"False|1.7749|
+|add_features|600|"best_quality"|"False|1.8001|
+|hpo|600|"high_quality"|"True"|2.0201|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-TODO: Replace the image below with your own.
 
-![model_train_score.png](img/model_train_score.png)
+
+![model_train_score](https://user-images.githubusercontent.com/68476971/191440355-f35df6a7-abce-4474-aa15-fe6651acda11.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score](https://user-images.githubusercontent.com/68476971/191440524-1c580a60-82df-416f-a99b-e80908134e58.png)
 
 ## Summary
-TODO: Add your explanation
+
+AutoGluon is a beginer frienfly AutoML tool that uses  to train extremely accurate machine learning models on unprocessed tabular datasets like CSV files. AutoGluon succeeds by assembling several models and stacking them in various layers, unlike other AutoML frameworks that largely focus on model/hyperparameter selection. With hyperparameter tuning we can find better score.
