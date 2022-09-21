@@ -33,7 +33,7 @@ In the time limit parameter.
 
 
 
-![model_train_score](https://user-images.githubusercontent.com/68476971/191440355-f35df6a7-abce-4474-aa15-fe6651acda11.png)
+![model_train_score](https://user-images.githubusercontent.com/68476971/191481945-3d4910ea-f532-43b1-a084-b98f0f318485.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
